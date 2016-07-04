@@ -1,0 +1,58 @@
+// Media query screen sizes
+$mobile-portrait: 320px
+$mobile-landscape: 480px
+$tablet-portrait: 600px
+$tablet-landscape: 768px
+$middle-desktop: 960px
+
+// Color variables
+$gray: #565656
+$border-color: #a0b3b9
+$text-color: #797979
+$orange-light: #f0d2b0
+$button-color: #839da5
+$title-color: #a0b3b9
+$blue: #4bc7e7
+
+// Common styles
+html,
+body
+    min-height: 100%
+
+body
+    font-family: 'Open_sans_light', sans-serif
+    font-weight: normal
+    background-color: #fff
+
+.wrapper
+    box-sizing: border-box
+    min-height: 100%
+
+.layout
+    @extend .container
+
+.container
+    position: relative
+    box-sizing: border-box
+    margin: 0 auto
+    padding: 0 15px
+    max-width: 960px
+    @include respond-to(tablet-landscape)
+        max-width: 768px
+    @include respond-to(tablet-portrait)
+        max-width: 600px
+    @include respond-to(mobile-landscape)
+        max-width: 480px
+    @include respond-to(mobile-portrait)
+        max-width: 100%
+
+.subscribe-btn
+    color: #000
+    background: $blue
+    font-size: 14px
+    text-transform: uppercase
+    text-align: center
+    padding: 15px
+    box-sizing: border-box
+    line-height: 20px
+    text-decoration: none

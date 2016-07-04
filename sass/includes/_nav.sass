@@ -1,0 +1,30 @@
+.nav
+    overflow: hidden
+    &__in
+        @extend .container
+        position: relative
+        height: 50px
+        display: flex
+        &:after
+            height: 100%
+            width: 4000px
+            content: ""
+            background: $blue
+            position: absolute
+            left: 100%
+            top: 0
+            margin-left: -15px
+    &__item
+        height: 100%
+        color: #000
+        font-size: 14px
+        text-transform: uppercase
+        text-align: center
+        padding: 15px
+        box-sizing: border-box
+        line-height: 20px
+        text-decoration: none
+        flex: 1
+        font-weight: bold
+        &_blue
+            background: $blue

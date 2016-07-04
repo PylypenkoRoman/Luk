@@ -1,0 +1,48 @@
+.header
+    height: 50px
+    background: #fff
+    &__in
+        @extend .container
+        position: relative
+        display: flex
+        justify-content: flex-end
+
+    .logo
+        position: absolute
+        top: 0
+        left: 0
+        width: 162px
+        height: 165px
+        background-color: #fff
+        background-image: url("../img/logo.png")
+        background-repeat: no-repeat
+        background-position: center center
+        z-index: 10
+        &:after
+            position: absolute
+            content: ""
+            height: 0
+            width: 0
+            top: 100%
+            left: 0
+            border-top: 28px solid #fff
+            border-bottom: 28px solid transparent
+            border-left: 81px solid #fff
+            border-right: 81px solid transparent
+        a
+            display: block
+            height: 100%
+            cursor: pointer
+    //.mobile-nav-btn
+.addition-nav
+    &__item
+        color: #000
+        font-size: 14px
+        text-transform: uppercase
+        text-align: center
+        padding: 15px
+        box-sizing: border-box
+        line-height: 20px
+        display: inline-block
+        text-decoration: none
+        &_active

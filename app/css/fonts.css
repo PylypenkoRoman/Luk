@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'aclonica_regular';
+    src: url('fonts/aclonica.eot');
+    src: url('fonts/aclonica.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aclonica.woff2') format('woff2'),
+         url('fonts/aclonica.woff') format('woff'),
+         url('fonts/aclonica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
