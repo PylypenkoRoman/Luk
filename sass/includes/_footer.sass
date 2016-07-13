@@ -1,0 +1,77 @@
+.footer
+    background: #ebebeb
+    &__in
+        @extend .container
+        padding-top: 70px
+        padding-bottom: 60px
+    &__content
+        display: flex
+        justify-content: space-between
+    &__column
+        flex: 1
+        padding: 0 30px
+        box-sizing: border-box
+        &:last-child
+            .footer__title
+                text-align: right
+    &__title
+        color: #000
+        margin: 0 0 23px
+        font-size: 16px
+        letter-spacing: 0.03em
+        font-weight: bold
+    &__nav
+        display: flex
+        justify-content: space-between
+    &__nav-column
+    &__nav-item
+        margin-bottom: 14px
+        font-size: 14px
+        line-height: 20px
+        display: block
+        text-decoration: none
+        letter-spacing: 0.03em
+        font-weight: 600
+        text-transform: uppercase
+        cursor: pointer
+        color: #000
+    &__column-holder
+        display: flex
+        justify-content: space-between
+    &__add-info
+        text-align: right
+        font-size: 13px
+        line-height: 24px
+        letter-spacing: 0.03em
+        margin: 0 0 10px
+        color: #000
+        font-weight: bold
+        a
+            font-weight: bold
+            color: #000
+            cursor: pointer
+            font-size: 14px
+            text-transform: uppercase
+            text-decoration: none
+
+.social-networks
+    display: flex
+    justify-content: flex-start
+    &__item
+        width: 30px
+        height: 30px
+        background: red
+        margin-right: 30px
+        cursor: pointer
+        &:last-child
+            margin-right: 0
+
+
+.copyright
+    text-align: right
+    font-size: 13px
+    line-height: 24px
+    letter-spacing: 0.03em
+    color: #000
+    margin: 0
+    font-weight: bold
