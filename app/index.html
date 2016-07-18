@@ -10,7 +10,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="top">
 			<div class="header__in">
 				<div class="mobile-nav-btn" id="mobile-nav-btn">
 					<i class="icon-mobile-nav-btn"></i>
@@ -22,6 +22,17 @@
 					<a class="addition-nav__item" href="#">Контакти</a>
 				</nav>
 				<a class="subscribe-btn" href="#">Повна підписка</a>
+				<div class="social-networks">
+					<a href="#" class="social-networks__item">
+						<svg class="icon icon-facebook"><use xlink:href="img/svg/sprite.svg#icon-facebook"></use></svg>
+					</a>
+					<a href="#" class="social-networks__item">
+						<svg class="icon icon-vkontakte"><use xlink:href="img/svg/sprite.svg#icon-vkontakte"></use></svg>
+					</a>
+					<a href="#" class="social-networks__item">
+						<svg class="icon icon-twitter"><use xlink:href="img/svg/sprite.svg#icon-twitter"></use></svg>
+					</a>
+				</div>
 			</div>
 		</header>
 		<section class="slider">
@@ -86,9 +97,31 @@
 				<a class="nav__item" href="#">За містом</a>
 				<a class="nav__item" href="#">Барабашовка</a>
 				<a class="nav__item" href="#">Афіша</a>
-				<a class="nav__item nav__item_search" href="#"><i></i></a>
+				<a class="nav__item nav__item_search" href="#">
+					<svg class="icon icon-search"><use xlink:href="img/svg/sprite.svg#icon-search"></use></svg>
+				</a>
 				<a class="nav__item nav__item_blue" href="#">Відео</a>
 				<a class="nav__item nav__item_blue" href="#">Тести</a>
+			</div>
+		</nav>
+		<nav class="projects-nav">
+			<div class="projects-nav__in">
+				<a href="#" class="projects-nav__item active">
+					<svg class="icon icon-horse"><use xlink:href="img/svg/sprite.svg#icon-horse"></use></svg>
+					<h3 class="projects-nav__title">Мне 20</h3>
+				</a>
+				<a href="#" class="projects-nav__item">
+					<svg class="icon icon-horse"><use xlink:href="img/svg/sprite.svg#icon-horse"></use></svg>
+					<h3 class="projects-nav__title">Крестовый поход</h3>
+				</a>
+				<a href="#" class="projects-nav__item">
+					<svg class="icon icon-horse"><use xlink:href="img/svg/sprite.svg#icon-horse"></use></svg>
+					<h3 class="projects-nav__title">Громкий мат</h3>
+				</a>
+				<a href="#" class="projects-nav__item">
+					<svg class="icon icon-horse"><use xlink:href="img/svg/sprite.svg#icon-horse"></use></svg>
+					<h3 class="projects-nav__title">Эстафета</h3>
+				</a>
 			</div>
 		</nav>
 		<div class="layout">
@@ -104,7 +137,7 @@
 								<span class="news__date">18. 03. 2016</span>
 								<h3 class="news__item-title">
 									<a class="news__item-link" href="#">
-										<strong class=news__highlight-text">Одна комедия жественнее другой</strong>
+										<strong class=news__highlight-text">Одна комедия божественнее другой</strong>
 									</a>
 								</h3>
 								<div class="news__tags-list">#
@@ -335,6 +368,254 @@
 					</div>
 				</div>
 			</section>
+			<section class="news">
+				<div class="news__in">
+					<h2 class="news__title">Місто</h2>
+					<ul class="news__list">
+						<li class="news__item news__item_large">
+							<a class="news__img-wrapper" href="#">
+								<img class="news__img" src="img/new_large_2.jpg" alt="img_alt">
+							</a>
+							<div class="news__text-block">
+								<span class="news__date">18. 03. 2016</span>
+								<h3 class="news__item-title">
+									<a class="news__item-link" href="#">
+										<strong class=news__highlight-text">Берлинале 2016:</strong> как потушить «Огонь на море»
+									</a>
+								</h3>
+								<div class="news__tags-list">#
+									<a class="news__tag" href="#">місто,</a>
+									<a class="news__tag" href="#">кіно,</a>
+									<a class="news__tag" href="#">театр,</a>
+									<a class="news__tag" href="#">интерв`ю</a>
+								</div>
+							</div>
+						</li>
+						<li class="news__item news__item_without-img">
+							<a class="news__img-wrapper" href="#">
+								<img class="news__img" src="img/new_3.jpg" alt="img_alt">
+							</a>
+							<div class="news__text-block">
+								<span class="news__date">18. 03. 2016</span>
+								<h3 class="news__item-title">
+									<a class="news__item-link" href="#">
+										<strong class=news__highlight-text">Реальність кусає людину</strong> - людина
+										кусає собаку: становлення української документалістики
+									</a>
+								</h3>
+								<div class="news__tags-list">#
+									<a class="news__tag" href="#">місто,</a>
+									<a class="news__tag" href="#">кіно,</a>
+									<a class="news__tag" href="#">театр,</a>
+									<a class="news__tag" href="#">интерв`ю</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="subscribe">
+				<div class="subscribe__in">
+					<div class="subscribe__row">
+						<form class="subscribe__form">
+							<label class="subscribe__label">Подпишись на афишу:</label>
+							<input class="subscribe__input" type="email">
+							<button class="subscribe__btn">
+								<svg class="icon icon-tick"><use xlink:href="img/svg/sprite.svg#icon-tick"></use></svg>
+							</button>
+						</form>
+					</div>
+					<div class="subscribe__row">
+						<button class="subscribe__addition-btn">а еще, у нас полная подписка</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="select-news">
+				<img class="select-news__img" src="img/select_news_1.jpg" alt="">
+				<div class="select-news__in">
+					<div class="select-news__text-block">
+						<span class="select-news__date">18. 03. 2016</span>
+						<h3 class="select-news__item-title">
+							<a class="select-news__item-link" href="#">
+								<strong class=select-news__highlight-text">Я и Села Брук:</strong><br> площадка <br> для театрального<br>  молодняка
+							</a>
+						</h3>
+					</div>
+				</div>
+			</section>
+			<section class="news">
+				<div class="news__in">
+					<h2 class="news__title">Місто</h2>
+					<ul class="news__list">
+						<li class="news__item news__item_large">
+							<a class="news__img-wrapper" href="#">
+								<img class="news__img" src="img/new_large_2.jpg" alt="img_alt">
+							</a>
+							<div class="news__text-block">
+								<span class="news__date">18. 03. 2016</span>
+								<h3 class="news__item-title">
+									<a class="news__item-link" href="#">
+										<strong class=news__highlight-text">Берлинале 2016:</strong> как потушить «Огонь на море»
+									</a>
+								</h3>
+								<div class="news__tags-list">#
+									<a class="news__tag" href="#">місто,</a>
+									<a class="news__tag" href="#">кіно,</a>
+									<a class="news__tag" href="#">театр,</a>
+									<a class="news__tag" href="#">интерв`ю</a>
+								</div>
+							</div>
+						</li>
+						<li class="news__item news__item_without-img">
+							<a class="news__img-wrapper" href="#">
+								<img class="news__img" src="img/new_3.jpg" alt="img_alt">
+							</a>
+							<div class="news__text-block">
+								<span class="news__date">18. 03. 2016</span>
+								<h3 class="news__item-title">
+									<a class="news__item-link" href="#">
+										<strong class=news__highlight-text">Реальність кусає людину</strong> - людина
+										кусає собаку: становлення української документалістики
+									</a>
+								</h3>
+								<div class="news__tags-list">#
+									<a class="news__tag" href="#">місто,</a>
+									<a class="news__tag" href="#">кіно,</a>
+									<a class="news__tag" href="#">театр,</a>
+									<a class="news__tag" href="#">интерв`ю</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="addition-button-row">
+				<div class="addition-button-row__in">
+					<button class="read-more-btn">Хочу ще</button>
+					<a class="to-top-btn" href="#top">
+						<svg class="icon icon-up"><use xlink:href="img/svg/sprite.svg#icon-up"></use></svg>
+					</a>
+				</div>
+			</section>
+			<section class="additional-news">
+				<div class="additional-news__in">
+					<h2 class="additional-news__title">Материалы по теме:</h2>
+					<ul class="additional-news__list">
+						<li class="additional-news__item">
+							<a class="additional-news__img-wrapper" href="#">
+								<img class="additional-news__img" src="img/additional_news_1.jpg" alt="img_alt">
+							</a>
+							<div class="additional-news__text-block">
+								<h3 class="additional-news__item-title">
+									<a class="additional-news__item-link" href="#">
+										<strong class="additional-news__highlight-text">Омерзительное выживание:</strong>
+										Тарантино vs. Иньяриту
+									</a>
+								</h3>
+							</div>
+						</li>
+						<li class="additional-news__item">
+							<a class="additional-news__img-wrapper" href="#">
+								<img class="additional-news__img" src="img/additional_news_1.jpg" alt="img_alt">
+							</a>
+							<div class="additional-news__text-block">
+								<h3 class="additional-news__item-title">
+									<a class="additional-news__item-link" href="#">
+										<strong class="additional-news__highlight-text">Максим Жидко:</strong>
+										Психоделический	опыт
+									</a>
+								</h3>
+							</div>
+						</li>
+						<li class="additional-news__item">
+							<a class="additional-news__img-wrapper" href="#">
+								<img class="additional-news__img" src="img/additional_news_1.jpg" alt="img_alt">
+							</a>
+							<div class="additional-news__text-block">
+								<h3 class="additional-news__item-title">
+									<a class="additional-news__item-link" href="#">
+										<strong class="additional-news__highlight-text">По чем опиум	для народа?</strong>
+										Концерты поп-исполнителей
+									</a>
+								</h3>
+							</div>
+						</li>
+						<li class="additional-news__item">
+							<a class="additional-news__img-wrapper" href="#">
+								<img class="additional-news__img" src="img/additional_news_1.jpg" alt="img_alt">
+							</a>
+							<div class="additional-news__text-block">
+								<h3 class="additional-news__item-title">
+									<a class="additional-news__item-link" href="#">
+										<strong class="additional-news__highlight-text">Всех порвем 1:1</strong>
+										Выход на большую сцену
+									</a>
+								</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="additional-news additional-news_second-color-bg">
+				<div class="additional-news__in">
+					<h2 class="additional-news__title">Популярные материалы:</h2>
+					<ul class="additional-news__list">
+						<li class="additional-news__item">
+							<a class="additional-news__img-wrapper" href="#">
+								<img class="additional-news__img" src="img/additional_news_1.jpg" alt="img_alt">
+							</a>
+							<div class="additional-news__text-block">
+								<h3 class="additional-news__item-title">
+									<a class="additional-news__item-link" href="#">
+										<strong class="additional-news__highlight-text">Омерзительное выживание:</strong>
+										Тарантино vs. Иньяриту
+									</a>
+								</h3>
+							</div>
+						</li>
+						<li class="additional-news__item">
+							<a class="additional-news__img-wrapper" href="#">
+								<img class="additional-news__img" src="img/additional_news_1.jpg" alt="img_alt">
+							</a>
+							<div class="additional-news__text-block">
+								<h3 class="additional-news__item-title">
+									<a class="additional-news__item-link" href="#">
+										<strong class="additional-news__highlight-text">Максим Жидко:</strong>
+										Психоделический	опыт
+									</a>
+								</h3>
+							</div>
+						</li>
+						<li class="additional-news__item">
+							<a class="additional-news__img-wrapper" href="#">
+								<img class="additional-news__img" src="img/additional_news_1.jpg" alt="img_alt">
+							</a>
+							<div class="additional-news__text-block">
+								<h3 class="additional-news__item-title">
+									<a class="additional-news__item-link" href="#">
+										<strong class="additional-news__highlight-text">По чем опиум	для народа?</strong>
+										Концерты поп-исполнителей
+									</a>
+								</h3>
+							</div>
+						</li>
+						<li class="additional-news__item">
+							<a class="additional-news__img-wrapper" href="#">
+								<img class="additional-news__img" src="img/additional_news_1.jpg" alt="img_alt">
+							</a>
+							<div class="additional-news__text-block">
+								<h3 class="additional-news__item-title">
+									<a class="additional-news__item-link" href="#">
+										<strong class="additional-news__highlight-text">Всех порвем 1:1</strong>
+										Выход на большую сцену
+									</a>
+								</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</div>
 
 		<footer class="footer">
@@ -360,13 +641,13 @@
 							<a class="subscribe-btn" href="#">Повна підписка</a>
 							<div class="social-networks">
 								<a href="#" class="social-networks__item">
-									<i class="icon-twitter"></i>
+									<svg class="icon icon-facebook"><use xlink:href="img/svg/sprite.svg#icon-facebook"></use></svg>
 								</a>
 								<a href="#" class="social-networks__item">
-									<i class="icon-twitter"></i>
+									<svg class="icon icon-vkontakte"><use xlink:href="img/svg/sprite.svg#icon-vkontakte"></use></svg>
 								</a>
 								<a href="#" class="social-networks__item">
-									<i class="icon-twitter"></i>
+									<svg class="icon icon-twitter"><use xlink:href="img/svg/sprite.svg#icon-twitter"></use></svg>
 								</a>
 							</div>
 						</div>
@@ -382,6 +663,7 @@
 
 	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/svgxuse.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

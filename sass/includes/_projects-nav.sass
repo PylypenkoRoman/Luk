@@ -1,0 +1,41 @@
+.projects-nav
+    &__in
+        @extend .container
+        padding-top: 45px
+        padding-bottom: 45px
+        padding-left: 65px
+        padding-right: 65px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__item
+        text-decoration: none
+        box-sizing: border-box
+        .icon
+            display: block
+            font-size: 7.8em
+            margin: 0 auto
+            color: $blue
+            transition: 0.3s
+        &:hover
+            cursor: pointer
+            .icon
+                color: #e1e1e1
+        &.active
+            cursor: default
+            .icon
+                color: #e1e1e1
+
+    &__title
+        text-align: center
+        font-size: 14px
+        line-height: 20px
+        margin: 0
+        letter-spacing: 0.03em
+        font-weight: bold
+        font-style: normal
+        text-transform: uppercase
+        text-decoration: none
+        color: #000
+        transition: 0.3s
+        font-family: 'GothamPro-Bold', Arial, Helvetica, sans-serif

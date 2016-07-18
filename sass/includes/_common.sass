@@ -29,7 +29,7 @@ body
     box-sizing: border-box
     min-height: 100%
 
-.layout
+//.layout
 
 .container
     position: relative
@@ -52,9 +52,67 @@ body
     font-size: 14px
     text-transform: uppercase
     text-align: center
-    padding: 15px
+    padding: 15px 18px
     box-sizing: border-box
     line-height: 20px
     text-decoration: none
     font-weight: bold
     cursor: pointer
+
+
+.social-networks
+    display: flex
+    justify-content: flex-start
+    &__item
+        height: 44px
+        width: 26px
+        margin-right: 17px
+        cursor: pointer
+        color: #000
+        &:last-child
+            margin-right: 0
+        .icon
+            font-size: 2.3em
+.layout
+    .addition-button-row
+        position: relative
+        margin-bottom: 80px
+        &__in
+            @extend .container
+
+.read-more-btn
+    border: 2px solid #000
+    width: 106px
+    margin: 0 auto
+    height: 36px
+    line-height: 24px
+    font-size: 13px
+    display: block
+    text-align: center
+    background: transparent
+    box-sizing: border-box
+    outline: 0
+    transition: 0.4s
+    padding: 5px
+    text-transform: uppercase
+    font-family: 'GothamPro-Bold', Arial, Helvetica, sans-serif
+
+.to-top-btn
+    position: absolute
+    cursor: pointer
+    right: 0
+    outline: 0
+    font-size: 5.1em
+    bottom: 0
+    color: $blue
+    height: 82px
+    width: 82px
+    top: 50%
+    margin-top: -41px
+    padding: 0
+    transition: 0.4s
+    background: transparent
+    border: 0
+
+
+

@@ -1,7 +1,8 @@
 .news
-    margin-bottom: 30px
     &__in
         @extend .container
+        padding-top: 30px
+        padding-bottom: 30px
     &__title
         letter-spacing: 0.02em
         font-size: 50px
@@ -47,8 +48,14 @@
             &__item-title
                 font-size: 28px
         &_colored
+            .news__img-wrapper
+                display: none
+            .news__text-block
+                padding: 60px 50px
+                box-sizing: border-box
             &.news__item_red
-                background:
+                .news__text-block
+                    background: red
 
 
     &__img-wrapper
@@ -58,8 +65,6 @@
         width: 100%
         height: auto
         display: block
-    &__text-block
-
     &__date
         font-family: 'pt_serifbold', Arial, Helvetica, sans-serif
         color: #888
