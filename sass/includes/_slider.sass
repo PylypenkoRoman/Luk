@@ -38,72 +38,77 @@
         margin: 0
         font-family: 'robotolight', Arial, Helvetica, sans-serif
         letter-spacing: 0.01em
-    .slick-arrow
-        position: absolute
-        width: 58px
-        height: 58px
-        background: transparent
-        border: 3px solid #fff
-        border-radius: 50%
-        box-sizing: border-box
-        bottom: 185px
-        color: transparent
-        font-size: 0
-        z-index: 2
-        outline: 0
+        .slick-prev
+            left: 50%
+            margin-left: -465px
+        .slick-next
+            right: 50%
+            margin-right: -485px
 
-    .slick-prev
-        left: 50%
-        margin-left: -465px
-        background: url("../img/svg/arrow-left.svg") center center no-repeat
-        background-size: 75%
-    .slick-next
-        right: 50%
-        margin-right: -485px
-        background: url("../img/svg/arrow-right.svg") center center no-repeat
-        background-size: 75%
-
-    .slick-dots
-        position: absolute
-        bottom: 28px
-        left: 0
-        display: flex
-        justify-content: center
-        right: 0
-        padding: 0
-        margin: 0
-        li
-            margin: 0 15px
-            list-style: none
+.slick-arrow
+    position: absolute
+    width: 58px
+    height: 58px
+    background: transparent
+    border: 3px solid #fff
+    border-radius: 50%
+    box-sizing: border-box
+    bottom: 185px
+    color: transparent
+    font-size: 0
+    z-index: 2
+    outline: 0
+.slick-prev
+    left: 50%
+    margin-left: -465px
+    background: url("../img/svg/arrow-left.svg") center center no-repeat
+    background-size: 75%
+.slick-next
+    right: 50%
+    margin-right: -485px
+    background: url("../img/svg/arrow-right.svg") center center no-repeat
+    background-size: 75%
+.slick-dots
+    position: absolute
+    bottom: 28px
+    left: 0
+    display: flex
+    justify-content: center
+    right: 0
+    padding: 0
+    margin: 0
+    li
+        margin: 0 15px
+        list-style: none
+        width: 16px
+        height: 16px
+        button
             width: 16px
             height: 16px
+            box-sizing: border-box
+            background: #fff
+            font-size: 0
+            color: transparent
+            position: relative
+            border-radius: 50%
+            border: 0
+            vertical-align: top
+            outline: none
+            padding: 0
+        &.slick-active
             button
-                width: 16px
-                height: 16px
-                box-sizing: border-box
-                background: #fff
-                font-size: 0
-                color: transparent
-                position: relative
-                border-radius: 50%
-                border: 0
-                vertical-align: top
-                outline: none
-                padding: 0
-            &.slick-active
-                button
-                    &:after
-                        width: 8px
-                        content: ""
-                        height: 8px
-                        border-radius: 50%
-                        box-sizing: border-box
-                        position: absolute
-                        top: 50%
-                        margin-top: -4px
-                        left: 50%
-                        background: #000
-                        margin-left: -4px
+                &:after
+                    width: 8px
+                    content: ""
+                    height: 8px
+                    border-radius: 50%
+                    box-sizing: border-box
+                    position: absolute
+                    top: 50%
+                    margin-top: -4px
+                    left: 50%
+                    background: #000
+                    margin-left: -4px
 
 
 

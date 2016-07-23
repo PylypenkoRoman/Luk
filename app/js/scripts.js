@@ -10,7 +10,14 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.slider').slick({
+	$('.js-slider').slick({
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		dots: true
+	});
+
+	$('.js-article__slider').slick({
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 4000,
