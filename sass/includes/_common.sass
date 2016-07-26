@@ -9,7 +9,9 @@ $middle-desktop: 960px
 
 $gray: #e1e1e1
 $blue: #4bc7e7
+$dark-blue: #00a4cf
 $pink: #ec008c
+
 
 // Common styles
 html,
@@ -55,21 +57,30 @@ body
     text-decoration: none
     font-weight: bold
     cursor: pointer
+    transition: 0.3s
+    &:hover
+        background: $dark-blue
+
 
 
 .social-networks
     display: flex
     justify-content: flex-start
     &__item
-        height: 44px
-        width: 26px
-        margin-right: 17px
+        padding: 0 3px
         cursor: pointer
         color: #000
-        &:last-child
-            margin-right: 0
+        transition: 0.3s
+        display: flex
+        align-items: center
         .icon
+            transition: 0.3s
             font-size: 2.3em
+        &:hover
+            background: $blue
+            .icon
+                color: #fff
+
 .layout
     .addition-button-row
         position: relative
@@ -90,10 +101,13 @@ body
     background: transparent
     box-sizing: border-box
     outline: 0
-    transition: 0.4s
+    transition: 0.3s
     padding: 5px
     text-transform: uppercase
     font-family: 'GothamPro-Bold', Arial, Helvetica, sans-serif
+    &:hover
+        background: #000
+        color: #fff
 
 .to-top-btn
     position: absolute
@@ -108,9 +122,9 @@ body
     top: 50%
     margin-top: -41px
     padding: 0
-    transition: 0.4s
+    border-radius: 50%
+    transition: 0.3s
     background: transparent
     border: 0
-
-
-
+    &:hover
+        color: $dark-blue

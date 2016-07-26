@@ -24,16 +24,21 @@
         font-size: 14px
         text-transform: uppercase
         text-align: center
-        padding: 10px 5px
+        padding: 10px 14px
         box-sizing: border-box
         line-height: 30px
         text-decoration: none
         letter-spacing: 0.05em
         flex: 1
+        transition: 0.3s
         font-weight: 900
         font-family: 'GothamPro-Bold', Arial, Helvetica, sans-serif
+        &:hover
+            background: $blue
         &_blue
             background: $blue
+            &:hover
+                background: $dark-blue
         &_search
             flex: none
             width: 60px
@@ -58,3 +63,5 @@
         .nav__item
             color: #000
             padding: 15px 5px
+            &:hover
+                background: $dark-blue
