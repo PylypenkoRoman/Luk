@@ -23,14 +23,22 @@
         box-sizing: border-box
         position: relative
         margin-bottom: 30px
+        @include respond-to(tablet-landscape)
+            width: 50%
 
         // Sizes
         &_small
             width: 25%
+            @include respond-to(tablet-landscape)
+                width: 50%
         &_big
             width: 41.66%
+            @include respond-to(tablet-landscape)
+                width: 50%
         &_large
             width: 66.66%
+            @include respond-to(tablet-landscape)
+                width: 50%
 
         // Different type in styling
         &_bordered

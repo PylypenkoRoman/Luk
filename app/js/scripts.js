@@ -10,6 +10,15 @@ $(document).ready(function(){
 		}
 	});
 
+	$('#js-mobile-nav-open-btn').click(function(){
+		$('body').addClass('overflow-hidden');
+		$('#js-mobile-nav').addClass('open');
+	});
+	$('#js-mobile-nav__close-btn').click(function(){
+		$('body').removeClass('overflow-hidden');
+		$('#js-mobile-nav').removeClass('open');
+	});
+
 	$('.js-slider').slick({
 		slidesToScroll: 1,
 		autoplay: true,
@@ -31,4 +40,5 @@ $(document).ready(function(){
 		}, 1000);
 		e.preventDefault();
 	});
+
 });

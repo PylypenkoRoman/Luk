@@ -2,6 +2,8 @@
     overflow: hidden
     margin-bottom: 20px
     background: #fff
+    @include respond-to(tablet-portrait)
+        display: none
     &__in
         @extend .container
         height: 50px
@@ -41,6 +43,8 @@
         .icon
             font-size: 2em
             color: #000
+        @include respond-to(tablet-landscape)
+            font-size: 12px
     &_fixed
         position: fixed
         top: 0

@@ -38,9 +38,9 @@
         padding-left: 31px
         height: 100%
         align-items: center
+        @include respond-to(tablet-portrait)
+            display: none
 
-
-    //.mobile-nav-btn
 .addition-nav
     margin-right: 46px
     &__item
@@ -54,4 +54,18 @@
         line-height: 31px
         display: inline-block
         text-decoration: none
-        &_active
+        @include respond-to(tablet-portrait)
+            display: none
+
+.mobile-nav-open-btn
+    position: absolute
+    left: 11px
+    top: 8px
+    z-index: 15
+    align-items: center
+    display: none
+    .icon
+        font-size: 2em
+        cursor: pointer
+    @include respond-to(tablet-portrait)
+        display: flex

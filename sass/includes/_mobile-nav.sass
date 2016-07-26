@@ -1,0 +1,63 @@
+.mobile-nav
+    overflow: hidden
+    z-index: 100
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    box-sizing: border-box
+    bottom: 0
+    overflow-y: auto 
+    padding: 80px 16px 20px
+    transition: 0.4s
+    transform: translateX(-100%)
+    background: rgba(0, 0, 0, 0.8)
+    &.open
+        right: 0
+        transform: translateX(0)
+
+    &__close-btn
+        background: transparent
+        border: 0
+        position: absolute
+        color: #fff
+        top: 8px
+        font-size: 2em
+        padding: 0
+        outline: none
+        left: 11px
+    &__search
+        padding-left: 7px
+        .icon
+            color: #fff
+            font-size: 2em
+    &__list
+        display: flex
+        flex-direction: column
+        max-width: 160px
+    &__box
+        padding: 15px 0
+        display: flex
+        flex-direction: column
+        border-bottom: 1px solid #fff
+    &__item
+        margin-bottom: 5px
+        color: #fff
+        text-decoration: none
+        padding: 9px 11px
+        box-sizing: border-box
+        font-size: 15px
+        line-height: 1
+        text-transform: uppercase
+        transition: 0.3s
+        cursor: pointer
+        font-family: 'GothamPro-Black', Arial, Helvetica, sans-serif
+        &:last-child
+            margin-bottom: 0
+        &:hover, &.active
+            background: $blue
+            color: #231f20
+    .social-networks
+        &__item
+            color: #fff
+
