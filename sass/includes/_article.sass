@@ -26,11 +26,37 @@
     &__slider
         overflow: hidden
         position: relative
+        .slick-arrow
+            top: 50%
+            margin-top: -29px
+        .slick-prev
+            left: 15px
+        .slick-next
+            right: 15px
     &__slider-item
         position: relative
-    //&__tags-list
-    //    .icon
-    //&__tag
+
+    &__tags-list
+        .icon
+            font-size: 2.3em
+            margin-right: 5px
+    &__tag
+        line-height: 1.2
+        font-size: 14px
+        display: inline-block
+        text-decoration: none
+        color: #8b8b8b
+        letter-spacing: 0.15em
+        font-weight: bold
+        &:hover
+            text-decoration: underline
+    .quote
+        border: 0
+        &__in
+            padding: 55px 50px
+        &__text
+            font-size: 30px
+
 
 .authors
     padding: 25px 35px

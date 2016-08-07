@@ -1,15 +1,24 @@
 .quote
     border-top: 10px solid $blue
     border-bottom: 10px solid $blue
+    @include respond-to(tablet-portrait)
+        border: 10px solid $blue
+        margin: 0 30px
     &__in
         @extend .container
         padding-top: 55px
         padding-bottom: 55px
         display: flex
         justify-content: space-between
+        @include respond-to(tablet-portrait)
+            flex-direction: column
     &__person
         flex: none
         margin-right: 85px
+        @include respond-to(tablet-landscape)
+            margin-right: 45px
+        @include respond-to(tablet-portrait)
+            margin: 0 auto 30px
     &__person-name
         text-align: center
         display: block
@@ -33,6 +42,8 @@
         flex: 1
         position: relative
         padding:  25px 80px 25px 70px
+        @include respond-to(tablet-landscape)
+            padding: 15px 50px 15px 50px
         &:before
             font-family: 'pt_serifitalic', Arial, Helvetica, sans-serif
             content: '«'
@@ -54,7 +65,7 @@
     &__text
         font-family: 'pt_serifitalic', Arial, Helvetica, sans-serif
         font-size: 24px
-        line-height: 34px
+        line-height: 1.4
         margin: 0
         letter-spacing: 0.03em
         color: #000

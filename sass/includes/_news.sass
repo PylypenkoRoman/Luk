@@ -11,6 +11,8 @@
         text-transform: uppercase
         margin: 0 0 28px
         font-family: 'pt_serifbold', Arial, Helvetica, sans-serif
+        @include respond-to(tablet-landscape)
+            font-size: 36px
     &__list
         display: flex
         flex-wrap: wrap
@@ -25,20 +27,28 @@
         margin-bottom: 30px
         @include respond-to(tablet-landscape)
             width: 50%
+        @include respond-to(mobile-landscape)
+            width: 100%
 
         // Sizes
         &_small
             width: 25%
             @include respond-to(tablet-landscape)
                 width: 50%
+            @include respond-to(mobile-landscape)
+                width: 100%
         &_big
             width: 41.66%
             @include respond-to(tablet-landscape)
                 width: 50%
+            @include respond-to(mobile-landscape)
+                width: 100%
         &_large
             width: 66.66%
             @include respond-to(tablet-landscape)
                 width: 50%
+            @include respond-to(mobile-landscape)
+                width: 100%
 
         // Different type in styling
         &_bordered
@@ -69,11 +79,6 @@
                 flex-direction: column
             .news__img-wrapper
                 margin: 0
-            .news__item-title
-                font-size: 30px
-                line-height: 1.4
-            .news__highlight-text
-                font-size: 28px
             .news__date
                 color: #000
             .news__tags-list
@@ -95,11 +100,8 @@
             .news__item-link
                 color: #fff
             .news__item-title
-                font-size: 48px
-                line-height: 1.2
-                color: #fff
+                 color: #fff
             .news__highlight-text
-                font-size: 28px
                 color: #fff
             .news__date
                 color: #fff
@@ -111,13 +113,6 @@
         &_without-img
             .news__img-wrapper
                 display: none
-            .news__item-title
-                font-size: 28px
-                line-height: 1.3
-            .news__highlight-text
-                font-size: 28px
-                line-height: 1.3
-
         &_colored-bg
             .news__img-wrapper
                 display: none
@@ -172,6 +167,19 @@
         color: #000
         font-weight: normal
         text-decoration: none
+        font-size: 21px
+        &.middle-text-size
+            font-size: 28px
+            .news__highlight-text
+                font-size: 28px
+        &.big-text-size
+            font-size: 36px
+            .news__highlight-text
+                font-size: 36px
+        &.large-text-size
+            font-size: 43px
+            .news__highlight-text
+                font-size: 43px
     &__highlight-text
         font-size: 21px
         line-height: 1.2

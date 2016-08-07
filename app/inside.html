@@ -9,12 +9,54 @@
 </head>
 
 <body>
+	<nav class="mobile-nav" id="js-mobile-nav">
+		<button class="mobile-nav__close-btn" id="js-mobile-nav__close-btn">
+			<svg class="icon icon-close"><use xlink:href="img/svg/sprite.svg#icon-close"></use></svg>
+		</button>
+		<div class="mobile-nav__list">
+			<form class="mobile-nav__search">
+				<input type="search" class="mobile-nav__search-input">
+				<button class="mobile-nav__search-button">
+					<svg class="icon icon-search"><use xlink:href="img/svg/sprite.svg#icon-search"></use></svg>
+				</button>
+			</form>
+			<div class="mobile-nav__box">
+				<a class="mobile-nav__item" href="#">Проекти</a>
+				<a class="mobile-nav__item" href="#">Місто</a>
+				<a class="mobile-nav__item" href="#">За містом</a>
+				<a class="mobile-nav__item active" href="#">Барабашовка</a>
+				<a class="mobile-nav__item" href="#">Афіша</a>
+			</div>
+			<div class="mobile-nav__box">
+				<a class="mobile-nav__item" href="#">Відео</a>
+				<a class="mobile-nav__item" href="#">Тести</a>
+			</div>
+			<div class="mobile-nav__box">
+				<a class="mobile-nav__item" href="#">Про нас</a>
+				<a class="mobile-nav__item" href="#">Люківці</a>
+				<a class="mobile-nav__item" href="#">Контакти</a>
+			</div>
+			<div class="mobile-nav__box">
+				<div class="social-networks">
+					<a href="#" class="social-networks__item">
+						<svg class="icon icon-facebook"><use xlink:href="img/svg/sprite.svg#icon-facebook"></use></svg>
+					</a>
+					<a href="#" class="social-networks__item">
+						<svg class="icon icon-vkontakte"><use xlink:href="img/svg/sprite.svg#icon-vkontakte"></use></svg>
+					</a>
+					<a href="#" class="social-networks__item">
+						<svg class="icon icon-twitter"><use xlink:href="img/svg/sprite.svg#icon-twitter"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 	<div class="wrapper">
 		<header class="header" id="top">
+			<div class="mobile-nav-open-btn" id="js-mobile-nav-open-btn">
+				<svg class="icon icon-menu"><use xlink:href="img/svg/sprite.svg#icon-menu"></use></svg>
+			</div>
 			<div class="header__in">
-				<div class="mobile-nav-btn" id="mobile-nav-btn">
-					<i class="icon-mobile-nav-btn"></i>
-				</div>
 				<strong class="logo"><a href="#"></a></strong>
 				<nav class="addition-nav">
 					<a class="addition-nav__item addition-nav__item_active" href="#">Про нас</a>
@@ -114,6 +156,20 @@
 						феноменальные кадры, на которых Оксана Черкашина держала в руках плитку шоколада без
 						слез на глазах. В общем, всего понемногу. Познавательно.
 					</p>
+				</div>
+				<section class="quote">
+					<div class="quote__in">
+						<div class="quote__text-block">
+							<p class="quote__text">
+								Сергей Бабкин поиграл на гитаре и спел. Den Mitchell
+								отыграли мини-концерт. Павел Алдошин спел
+								и сыграл на гитаре, не подозревая, что через пару часов
+								он сам снимет ботинки и примется танцевать.
+							</p>
+						</div>
+					</div>
+				</section>
+				<div class="article__in">
 					<div class="article__slider js-article__slider">
 						<img class="article__slide" src="img/article_img_slide_1.jpg" alt="">
 						<img class="article__slide" src="img/article_img_slide_1.jpg" alt="">

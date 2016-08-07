@@ -37,6 +37,8 @@
         margin: 0 0 4px
         line-height: 1.65
         font-family: 'pt_serifbold', Arial, Helvetica, sans-serif
+        @include respond-to(tablet-landscape)
+            font-size: 32px
     &__text
         font-size: 28px
         color: #fff
@@ -44,6 +46,8 @@
         margin: 0
         font-family: 'robotolight', Arial, Helvetica, sans-serif
         letter-spacing: 0.01em
+        @include respond-to(tablet-landscape)
+            font-size: 20px
     &_baraban
         .jumbotron__in
             padding: 212px 15px 25px
